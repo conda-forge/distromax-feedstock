@@ -1,13 +1,13 @@
 {% set name = "distromax" %}
-{% set version = "1.0.4" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f215a2df756ba048ec93df9d844cd89c62c32ad8b0405ae9a2d02f12a7c8a600
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 92718c9313f77314d986077992186c2bf71639e3890b48bbbd0dddc5e326cde3
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ about:
     This is a python package implementing a method to empirically estimate 
     the distribution of the loudest candidate from a generic gravitational-wave search
     using results from extreme value theory.
-  dev_url: https://github.com/Rodrigo-Tenorio/distromax/ 
+  dev_url: https://github.com/Rodrigo-Tenorio/distromax/
 
 extra:
   recipe-maintainers:
